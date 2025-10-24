@@ -1,15 +1,4 @@
-# Innovative-Construction-Detection-System
-Construction monitoring system - predicting problems before they happen and catching invisible defects in real-time.
 
-\\
-
-"""
-============
-Storage Inventory Comparison System - PHOTO VERSION
-============
-Detects missing and added objects between two photos of storage areas
-Sends clear messages about exactly what changed and how many
-"""
 
 import numpy as np
 import cv2
@@ -17,7 +6,7 @@ import os
 from collections import defaultdict
 import time
 
-# Use the existing COCO_CLASSES from your code
+
 COCO_CLASSES = ("person", "bicycle", "car", "motorcycle", "airplane", "bus",
         "train", "truck", "boat", "traffic light", "fire hydrant", "stop sign",
         "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep",
@@ -334,7 +323,6 @@ class StorageInventoryAnalyzer:
         
         return display
 
-# Your existing YoloV8 class (keep it exactly as is)
 class YoloV8:
     """
     A helper class to run YOLOv8 pre- and post-proccessing.
@@ -418,7 +406,7 @@ class YoloV8:
 
         return final_detections
 
-# Main execution
+
 def main():
     print("🚀 NEOM Storage Inventory Comparison - PHOTO SYSTEM")
     print("=" * 60)
